@@ -1,0 +1,335 @@
+/* fonts import start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+/* fonts import end */
+
+/* media query */
+
+/*
+    320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV
+*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    body{
+        overflow-x: hidden !important;
+    }
+    .menu, .login {
+       font-size: 10px !important;
+       display:block !important;
+        width: 100% !important;
+    }
+    .content-top, .player-card, .man-of-the-match, .right-banner-content{
+        display:block !important;
+        width: 100% !important;
+    }
+    a{
+        font-size: 10px !important;
+    }
+    h1{
+        font-size: 40px !important;
+    }
+    p{
+        font-size: 20px !important;
+    }
+    .highlights-left-content{
+        
+        display: none !important;
+       
+    }
+    .highlights-right-content{
+        display: block !important;
+        width: 100% !important;
+    }
+}
+/* media query */
+
+/* common css start */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.semi-container {
+    width: 80%;
+    display: flex;
+
+}
+
+hr {
+    margin-top: 100px;
+}
+
+/* common css end */
+
+/* header/banner section start */
+header {
+    background-color: #2D25A0;
+}
+
+.navbar {}
+
+nav {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+}
+
+nav .menu {
+    width: 70%;
+}
+
+nav .menu ul li {
+    display: inline-flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: 0.6s;
+}
+
+nav ul li a:hover {
+    background-color: #4a43a3;
+}
+
+nav .login {
+    text-align: right;
+    width: 30%;
+}
+
+nav .login a {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 10px;
+    padding: 10px 24px;
+    color: #ffffff;
+    background: #E02C6D;
+    transition: 0.9s;
+}
+
+nav .login a:hover {
+    background: linear-gradient(to right, #ff005d, #2D25A0);
+    cursor: progress;
+}
+
+.top-banner {
+    margin: 0 auto;
+
+}
+
+.content-top {
+    display: flex;
+
+}
+
+.left-banner-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+.left-banner-content h1 {
+    line-height: 80px;
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+.left-banner-content h1 a {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 10px;
+    padding: 13px 24px;
+    color: #ffffff;
+    background: #E02C6D;
+    transition: 0.9s;
+}
+
+.left-banner-content h1 a:hover {
+    background: linear-gradient(to right, #ff005d, #2D25A0);
+    cursor: progress;
+}
+
+.right-banner-content {
+    width: 50%;
+    padding: 5% 0px;
+}
+
+.right-banner-content img {
+    width: 100%;
+}
+
+/* header/banner section end */
+
+/* player card section start */
+.player-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px 0px;
+}
+
+.player-card .player-item {
+    padding: 5%;
+    margin: 4%;
+    box-shadow: 5px 5px 15px;
+}
+
+.player-card .player-item img {
+    width: 100%;
+}
+
+/* player card section end */
+
+/* highlights section start */
+.highlights-content {
+    display: flex;
+    justify-content: center;
+}
+
+.highlights-left-content {
+    width: 50%;
+}
+
+.highlights-left-content h1 {
+    padding-top: 10%;
+    line-height: 60px;
+    font-size: 50px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.highlights-left-content p {
+    line-height: 30px;
+    font-size: 17px;
+    color: #6C6C6C;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.highlights-left-content a {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 10px;
+    padding: 13px 24px;
+    color: #ffffff;
+    background: #E02C6D;
+    transition: 0.9s;
+}
+
+.highlights-left-content a:hover {
+    background: linear-gradient(to right, #ff005d, #2D25A0);
+    cursor: progress;
+}
+
+.highlights-right-content {
+    width: 50%;
+}
+
+.highlights-right-content img {
+    width: 100%;
+}
+
+/* highlights section end */
+
+/* Organization section start */
+.organization {
+    display: block;
+    text-align: center;
+}
+
+.organization h1 {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    line-height: 60px;
+    font-size: 50px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.background-banner img {
+    width: 100%;
+
+}
+
+.organization p {
+    color: #000000;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+/* Organization section end */
+
+/* man of the match section start */
+.man-of-the-match {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px 0px;
+    justify-content: center;
+}
+
+.man-of-the-match .item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 80%;
+    padding: 0px 10%;
+}
+
+.man-of-the-match .item {
+    margin: 1em;
+
+}
+
+.man-of-the-match .item img {
+    width: 100%;
+}
+
+/* man of the match section end */
+
+/* footer copyright section start */
+footer {
+    text-align: center;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.icons i {
+    font-size: 20px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+.footer-content p {
+    padding: 25px 0px;
+}
+
+/* footer copyright section end */
